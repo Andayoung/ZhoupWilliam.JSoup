@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/bcg"
+              android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical" >
+
+
+            <TableRow
+                android:layout_width="300dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/fttpl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="存储位置:"
+                    android:textSize="20dp"
+                    android:singleLine="true" />
+                <EditText
+                    android:id="@+id/ftpurl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="/Z/"
+                    android:singleLine="true" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="300dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/httpl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="输入网址："
+                    android:textSize="20dp"
+                    android:singleLine="true" />
+                <EditText
+                    android:id="@+id/httpurl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="http://"
+                    android:singleLine="true" />
+
+            </TableRow>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/cancelpsw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:text="取消" />
+
+                <Button
+                    android:id="@+id/okpsw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:text="确定" />
+                <Button
+                    android:id="@+id/openpsw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:text="打开" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                >
+                <ProgressBar
+                android:id="@+id/loading_process_dialog_progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="invisible"
+                android:indeterminateDrawable="@anim/loading" />
+                <TextView
+                    android:id="@+id/precent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:textSize="18dp"
+                    android:visibility="invisible"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
